@@ -504,3 +504,4 @@ For instance, to run the current test,
 > [!WARNING]
 > You cannot use `nvim-java` alongside `nvim-jdtls`. So remove `nvim-jdtls`
 > before installing this
+# nvim-java-james
