@@ -17,9 +17,9 @@ vim.opt.rtp:append(
 	local_plug('~/Workspace/nvim-java-core', plug_path .. '/nvim-java-core')
 )
 
-vim.opt.rtp:append(
-	local_plug('~/Workspace/nvim-java-test', plug_path .. '/nvim-java-test')
-)
+--vim.opt.rtp:append(
+--	local_plug('~/Workspace/nvim-java-test', plug_path .. '/nvim-java-test')
+--)
 
 vim.opt.rtp:append(
 	local_plug('~/Workspace/nvim-java-dap', plug_path .. '/nvim-java-dap')

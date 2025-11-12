@@ -27,12 +27,12 @@ require('lazy').setup({
 		'nvim-lua/plenary.nvim',
 		lazy = false,
 	},
-	{
-		'nvim-java/nvim-java-test',
-		---@diagnostic disable-next-line: assign-type-mismatch
-		dir = local_plug('~/Workspace/nvim-java-test'),
-		lazy = false,
-	},
+	--{
+	--	'nvim-java/nvim-java-test',
+	--	---@diagnostic disable-next-line: assign-type-mismatch
+	--	dir = local_plug('~/Workspace/nvim-java-test'),
+	--	lazy = false,
+	--},
 	{
 		'nvim-java/nvim-java-core',
 		---@diagnostic disable-next-line: assign-type-mismatch
