@@ -1,5 +1,103 @@
 # Changelog
 
+## 3.0.0 (2025-11-14)
+
+
+### ⚠ BREAKING CHANGES
+
+* move all the client commands to nvim-refactor repo ([#278](https://github.com/jamesg7631/nvim-java-james/issues/278))
+* go from promises to co-routines ([#30](https://github.com/jamesg7631/nvim-java-james/issues/30))
+* change the project structure according to new core changes ([#27](https://github.com/jamesg7631/nvim-java-james/issues/27))
+
+### Features
+
+* add API to open test reports ([#35](https://github.com/jamesg7631/nvim-java-james/issues/35)) ([1fb58a6](https://github.com/jamesg7631/nvim-java-james/commit/1fb58a6f0fb20253de3542a4ea950f435378ed30))
+* add build workspace command ([4d92c3d](https://github.com/jamesg7631/nvim-java-james/commit/4d92c3d8552aa3c80a3f4a98754e570a564addf5))
+* add capability to lsp actions in .class files ([#11](https://github.com/jamesg7631/nvim-java-james/issues/11)) ([8695b99](https://github.com/jamesg7631/nvim-java-james/commit/8695b9972a40ee5eec2e4a05208db29db56b8a90))
+* add clean workspace command ([8a1171c](https://github.com/jamesg7631/nvim-java-james/commit/8a1171cc21aaae58f8a08759562814aea87e694d))
+* add command to change the runtime ([#244](https://github.com/jamesg7631/nvim-java-james/issues/244)) ([af9c8ff](https://github.com/jamesg7631/nvim-java-james/commit/af9c8ff3c7cf313611daa194409cb65e7831e98a))
+* add commands for lua APIs ([#43](https://github.com/jamesg7631/nvim-java-james/issues/43)) ([62bf7f7](https://github.com/jamesg7631/nvim-java-james/commit/62bf7f79ed37ebf02b2ad1c670cc495105d025ad))
+* add config option to install jdk17 via mason ([29e6318](https://github.com/jamesg7631/nvim-java-james/commit/29e631803903b52eb070ec7f069db8a44081d925))
+* add convert to variable refactor command ([2635a64](https://github.com/jamesg7631/nvim-java-james/commit/2635a640aebd007b52a3d288b1318cacca7dc44c))
+* add editor config ([01a6c15](https://github.com/jamesg7631/nvim-java-james/commit/01a6c1534e80c7cfbdde58e5e4962cbf32e5cd80))
+* add extract variable refactor command ([#171](https://github.com/jamesg7631/nvim-java-james/issues/171)) ([0e61713](https://github.com/jamesg7631/nvim-java-james/commit/0e617134db2b540e5cee54856d8805e647f1d42f))
+* add extract_field command ([aabca01](https://github.com/jamesg7631/nvim-java-james/commit/aabca011b56b605f7bf12df0534f7d5b60b16fff))
+* add generate constructor code action ([ea5371b](https://github.com/jamesg7631/nvim-java-james/commit/ea5371bf0de96dd6856ae623455376d6e2062045))
+* add generate hash code and equals code action ([6a714fe](https://github.com/jamesg7631/nvim-java-james/commit/6a714fedc4a8a327d2acebe34d673b768dcbb0d8))
+* add lazy.lua file to declare dependencies on lazy.nvim ([#215](https://github.com/jamesg7631/nvim-java-james/issues/215)) ([1349ac5](https://github.com/jamesg7631/nvim-java-james/commit/1349ac545feb37459a04a0a37d41496463c63c87))
+* add lint & release-please workflows ([#67](https://github.com/jamesg7631/nvim-java-james/issues/67)) ([0751359](https://github.com/jamesg7631/nvim-java-james/commit/0751359c08e6305ec031790f0c1fdb1091b3e03b))
+* add mason registry check ([#225](https://github.com/jamesg7631/nvim-java-james/issues/225)) ([ef7597d](https://github.com/jamesg7631/nvim-java-james/commit/ef7597d158f0687c8c0bd2c11e5907c32e52574f))
+* add more extract commands ([0ec0f46](https://github.com/jamesg7631/nvim-java-james/commit/0ec0f463efa7b3cc77d30660ced357e295ab7cd7))
+* add plugin manager for testing ([1feb82e](https://github.com/jamesg7631/nvim-java-james/commit/1feb82e5576b468f7e0ab7c87c6f19c8db7800aa))
+* add spring boot tools support ([#232](https://github.com/jamesg7631/nvim-java-james/issues/232)) ([028e870](https://github.com/jamesg7631/nvim-java-james/commit/028e870c5a69cf5ee68e4776e9614a664cc65871))
+* add sync ui select util ([#345](https://github.com/jamesg7631/nvim-java-james/issues/345)) ([c616f72](https://github.com/jamesg7631/nvim-java-james/commit/c616f72fa2ea0ad9d7798e1d7cab56aa6de56108))
+* add test current method API ([#31](https://github.com/jamesg7631/nvim-java-james/issues/31)) ([a5e5adb](https://github.com/jamesg7631/nvim-java-james/commit/a5e5adb60a726ece9298723bd2c2e6000efc3731))
+* add toString code action ([4b1e1bd](https://github.com/jamesg7631/nvim-java-james/commit/4b1e1bd5206174b8914858d085fe6809482b5575))
+* add validations for exec order, duplicate setup calls ([#219](https://github.com/jamesg7631/nvim-java-james/issues/219)) ([15bc822](https://github.com/jamesg7631/nvim-java-james/commit/15bc822acb1e11983bde70f436dd17d41ba76925))
+* add warning on not yet implemented client commands ([a889ff4](https://github.com/jamesg7631/nvim-java-james/commit/a889ff4ab49774849bd647d136370fa1b69c70f8))
+* adding delegate method generate code action ([9462546](https://github.com/jamesg7631/nvim-java-james/commit/94625466f5023719c3625438fcf95f75f7d0c02d))
+* adds Mason 2.0 support ([#402](https://github.com/jamesg7631/nvim-java-james/issues/402)) ([58c25cd](https://github.com/jamesg7631/nvim-java-james/commit/58c25cd45d867fc512af48a457c71bb26d9d778d))
+* allow extract variable command in visual mode ([0ac2e2f](https://github.com/jamesg7631/nvim-java-james/commit/0ac2e2f5d8a4dc72b2fd249424534cd94d2c7a78))
+* APIs to run application ([#136](https://github.com/jamesg7631/nvim-java-james/issues/136)) ([a0c6c1b](https://github.com/jamesg7631/nvim-java-james/commit/a0c6c1b7dbf547b88350d6ffd033c61451a067eb))
+* auto configure jdtls and dap at start up ([#2](https://github.com/jamesg7631/nvim-java-james/issues/2)) ([83e25bb](https://github.com/jamesg7631/nvim-java-james/commit/83e25bb827aee6b52b389f608eca01a01fa7ee2a))
+* auto refresh the mason registory when pkgs are not available ([#41](https://github.com/jamesg7631/nvim-java-james/issues/41)) ([0edb02c](https://github.com/jamesg7631/nvim-java-james/commit/0edb02c12ca5b8750f9734562d7ea2213e3c8442))
+* **conf:** capability to remove dap related notifications ([9f9b785](https://github.com/jamesg7631/nvim-java-james/commit/9f9b785e9f8a452e7bd56d809578efc1c5908b6b))
+* Create FUNDING.yml ([f23b56e](https://github.com/jamesg7631/nvim-java-james/commit/f23b56e3fc80156781e7d3029c365be766e3af24))
+* extract debug & run APIs for current test class ([#14](https://github.com/jamesg7631/nvim-java-james/issues/14)) ([b5368b2](https://github.com/jamesg7631/nvim-java-james/commit/b5368b20fb2479e0571675d1646cce248e5a809b))
+* handle multipel running app ([#182](https://github.com/jamesg7631/nvim-java-james/issues/182)) ([#191](https://github.com/jamesg7631/nvim-java-james/issues/191)) ([ca5cfdb](https://github.com/jamesg7631/nvim-java-james/commit/ca5cfdba0d0629a829d16fa838808be0d5db8baa))
+* run/debug profiles ([#110](https://github.com/jamesg7631/nvim-java-james/issues/110), [#131](https://github.com/jamesg7631/nvim-java-james/issues/131)) ([#146](https://github.com/jamesg7631/nvim-java-james/issues/146)) ([3442006](https://github.com/jamesg7631/nvim-java-james/commit/3442006df0bbfb7fc5a45618d1fe971ce95a97a7))
+* **ui:** add visual indication for dap configuration status ([#60](https://github.com/jamesg7631/nvim-java-james/issues/60)) ([7f5475e](https://github.com/jamesg7631/nvim-java-james/commit/7f5475ebac07b7522afc24b2d6ff6afe5e1d373d))
+* upgrade java debug adapter ([644c4cb](https://github.com/jamesg7631/nvim-java-james/commit/644c4cbe7cda5d7bac08f7ec293e08078d4afac0))
+
+
+### Bug Fixes
+
+* 0.40.1 failure on install ([f16b08b](https://github.com/jamesg7631/nvim-java-james/commit/f16b08b277400c1965679be6f5178cb5d04b6f25))
+* build badge ([0af982e](https://github.com/jamesg7631/nvim-java-james/commit/0af982e895e3eabfcae97d922eac733a758d5757))
+* build shields badge ([db7b333](https://github.com/jamesg7631/nvim-java-james/commit/db7b3335dfc1a38181b1702449aae50589382ae8))
+* check existance of profile before modifications ([6c4f1e2](https://github.com/jamesg7631/nvim-java-james/commit/6c4f1e2de5adb9e521947b95eb2ae32d03c61d0a))
+* **ci:** invalid vim-doc name ([#16](https://github.com/jamesg7631/nvim-java-james/issues/16)) ([4a64bb6](https://github.com/jamesg7631/nvim-java-james/commit/4a64bb6eef90c857913780bbde92ad7411002eef))
+* **dap:** do not override previously defined user config ([#342](https://github.com/jamesg7631/nvim-java-james/issues/342)) ([4d810a5](https://github.com/jamesg7631/nvim-java-james/commit/4d810a546c262ca8f60228dc98ba51f81f5649c6))
+* error in error handler function ([#24](https://github.com/jamesg7631/nvim-java-james/issues/24)) ([2fd3979](https://github.com/jamesg7631/nvim-java-james/commit/2fd39790df73669e2384f3dd1acd3c1322203dfb))
+* error when java.setup with no table ([#56](https://github.com/jamesg7631/nvim-java-james/issues/56)) ([18bb0ab](https://github.com/jamesg7631/nvim-java-james/commit/18bb0abe4450bc7405f78f0d8e37f9787315102c))
+* get_client func is failing on older neovim ([bb7d586](https://github.com/jamesg7631/nvim-java-james/commit/bb7d586161bf3e10153dc6a1180984d310c025fe))
+* goto definition error out due to buffer is not modifiable ([#74](https://github.com/jamesg7631/nvim-java-james/issues/74)) ([d1233cc](https://github.com/jamesg7631/nvim-java-james/commit/d1233ccc101866bcbea394c51b7c0780bf98bb9d))
+* java-debug fails due to unavailablity of v0.52.0 ([#105](https://github.com/jamesg7631/nvim-java-james/issues/105)) ([f20e49f](https://github.com/jamesg7631/nvim-java-james/commit/f20e49fbfa84a73f371ba9bd925d19c57f0cdd70))
+* java-debug-adapter doean't install ([#407](https://github.com/jamesg7631/nvim-java-james/issues/407)) ([2776094](https://github.com/jamesg7631/nvim-java-james/commit/2776094c745af0d99b5acb24a4594d85b4f99545))
+* jdk auto_install should be true by default ([#59](https://github.com/jamesg7631/nvim-java-james/issues/59)) ([2c82759](https://github.com/jamesg7631/nvim-java-james/commit/2c827599f099d8b80cfdd74690ff807309748930))
+* jdtls wont start up after new mason versioned package ([#147](https://github.com/jamesg7631/nvim-java-james/issues/147)) ([8945fc1](https://github.com/jamesg7631/nvim-java-james/commit/8945fc16452e9c6748194ac5e24379a8ccdcf3a2))
+* **lint:** lint error ([5498e76](https://github.com/jamesg7631/nvim-java-james/commit/5498e76364def449533199ea5bdbdde9a7eeb83c))
+* lombok APIs with parameters are not working ([#129](https://github.com/jamesg7631/nvim-java-james/issues/129)) ([5133a21](https://github.com/jamesg7631/nvim-java-james/commit/5133a21ffc6b9545d9785721d34a212120a22749))
+* mason registry verification fails ([#405](https://github.com/jamesg7631/nvim-java-james/issues/405)) ([4fd68c4](https://github.com/jamesg7631/nvim-java-james/commit/4fd68c4025acaafb9efbf2e0cf69e017bcc4476c))
+* nvim-java mason reg is added if the mason config does not consid… ([#355](https://github.com/jamesg7631/nvim-java-james/issues/355)) ([db54fbf](https://github.com/jamesg7631/nvim-java-james/commit/db54fbf6a022f2720f86c6b6d7383ba501211b80))
+* profile deletion does not work ([#158](https://github.com/jamesg7631/nvim-java-james/issues/158)) ([cb62d07](https://github.com/jamesg7631/nvim-java-james/commit/cb62d076edf5c12f036cb55c121c2fa77becb0f4))
+* refactor and build lua API being registered incorrectly ([#284](https://github.com/jamesg7631/nvim-java-james/issues/284)) ([b9e6b71](https://github.com/jamesg7631/nvim-java-james/commit/b9e6b71c8cbb3f6db8ce7d3a9bd3f3cb805156f1))
+* remove github token from stylua workflow ([a6b1c8b](https://github.com/jamesg7631/nvim-java-james/commit/a6b1c8b8a5569476c1a73bcb606ba2e33025d54e))
+* runner cmd [#241](https://github.com/jamesg7631/nvim-java-james/issues/241) ([#329](https://github.com/jamesg7631/nvim-java-james/issues/329)) ([a36f50c](https://github.com/jamesg7631/nvim-java-james/commit/a36f50c82f922f352d4ce7ac6a3c6b238b3e0a36))
+* server module was moved from prev location in java-core ([#22](https://github.com/jamesg7631/nvim-java-james/issues/22)) ([a27c215](https://github.com/jamesg7631/nvim-java-james/commit/a27c2159c7ef5620137916419ed689501c6264ae))
+* some dap warnings are not respecting notification rules ([#197](https://github.com/jamesg7631/nvim-java-james/issues/197)) ([603f270](https://github.com/jamesg7631/nvim-java-james/commit/603f2708cb2d3980f3787a2d9cfd10775e8f2606))
+* sometimes dap is not configured correctly ([#126](https://github.com/jamesg7631/nvim-java-james/issues/126)) ([4f1f310](https://github.com/jamesg7631/nvim-java-james/commit/4f1f31094632342cc45902276d11971507c415e0))
+* **test:** tests are hanging after vim.ui.select to handle async ui change. ([#139](https://github.com/jamesg7631/nvim-java-james/issues/139)) ([#140](https://github.com/jamesg7631/nvim-java-james/issues/140)) ([ba1146e](https://github.com/jamesg7631/nvim-java-james/commit/ba1146ebe859dbd2ea4fded68bb8b04805a894ec))
+* the manually stoped/restarted job show the error message ([#242](https://github.com/jamesg7631/nvim-java-james/issues/242)) ([#243](https://github.com/jamesg7631/nvim-java-james/issues/243)) ([0b9fac9](https://github.com/jamesg7631/nvim-java-james/commit/0b9fac9cae5ac13590d5e8201d9611aebbbece73))
+* typo in java profile ui command ([#156](https://github.com/jamesg7631/nvim-java-james/issues/156)) ([30966b7](https://github.com/jamesg7631/nvim-java-james/commit/30966b7314ffb01acc2886c24ef155bea9a1aaf1))
+* **typo:** project vise -&gt; project-wise ([#390](https://github.com/jamesg7631/nvim-java-james/issues/390)) ([7c2e81c](https://github.com/jamesg7631/nvim-java-james/commit/7c2e81caa301b0d1bc7992b88981af883b3b5d6b))
+* user jdtls setup config wont override the default config ([#91](https://github.com/jamesg7631/nvim-java-james/issues/91)) ([fa14d06](https://github.com/jamesg7631/nvim-java-james/commit/fa14d065d3e5d7402d8bde6ebb2099dfc9f29e3f))
+* when launched first time lazy covers mason nvim window ([#52](https://github.com/jamesg7631/nvim-java-james/issues/52)) ([340cad5](https://github.com/jamesg7631/nvim-java-james/commit/340cad58b382b9e3f310fbc50427691f5b46af2f))
+* when the same main class is ran again, first process is not stopped ([1fae8de](https://github.com/jamesg7631/nvim-java-james/commit/1fae8de1327167ac4b9f744970b2b6b7c7652874))
+
+
+### Miscellaneous Chores
+
+* release 1.0.4 ([a268bdd](https://github.com/jamesg7631/nvim-java-james/commit/a268bddafec62282d1e7e5ad85d34696bf5dd027))
+* release 3.0.0 ([3cecf73](https://github.com/jamesg7631/nvim-java-james/commit/3cecf7362e5f83e4a34e84e4f14c65bad81968f1))
+
+
+### Code Refactoring
+
+* change the project structure according to new core changes ([#27](https://github.com/jamesg7631/nvim-java-james/issues/27)) ([7c7b772](https://github.com/jamesg7631/nvim-java-james/commit/7c7b772151b67bea7eb3bd96f78cfa337d106d8d))
+* go from promises to co-routines ([#30](https://github.com/jamesg7631/nvim-java-james/issues/30)) ([737792d](https://github.com/jamesg7631/nvim-java-james/commit/737792d2595a01d0e3c491dcae907a7041d27c1b))
+* move all the client commands to nvim-refactor repo ([#278](https://github.com/jamesg7631/nvim-java-james/issues/278)) ([1c04d72](https://github.com/jamesg7631/nvim-java-james/commit/1c04d72d10a4807583096848dc6ad92192a94ee1))
+
 ## [3.0.0](https://github.com/nvim-java/nvim-java/compare/v2.1.2...v3.0.0) (2025-08-06)
 
 
