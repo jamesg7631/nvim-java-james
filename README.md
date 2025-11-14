@@ -366,7 +366,7 @@ want, following options are available
   -- load java test plugins
   java_test = {
     enable = true,
-    version = '0.40.1',
+    version = '0.43.1',
   },
 
   -- load java debugger plugins
