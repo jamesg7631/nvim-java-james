@@ -1,10 +1,10 @@
 return {
-	'nvim-java/nvim-java',
+	'jamesg7631/nvim-java-james',
 	dependencies = {
 		'nvim-java/lua-async-await',
 		'nvim-java/nvim-java-refactor',
 		'nvim-java/nvim-java-core',
-		--'nvim-java/nvim-java-test',
+		'jamesg7631/nvim-java-test',
 		'nvim-java/nvim-java-dap',
 		'MunifTanjim/nui.nvim',
 		'neovim/nvim-lspconfig',

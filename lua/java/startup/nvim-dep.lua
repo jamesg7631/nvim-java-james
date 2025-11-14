@@ -22,7 +22,7 @@ Please follow the install guide in https://github.com/nvim-java/nvim-java to ins
 Please add nvim-java-refactor to the current dependency list
 
 {
-	"nvim-java/nvim-java",
+	"jamesg7631/nvim-java-james",
 	dependencies = {
 		"nvim-java/nvim-java-refactor",
 		....
